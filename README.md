@@ -17,8 +17,8 @@ The setup of the test is that:
 
   b. The form is selectively updated base on which property was updated.
 
-# Adding Listeners vs. Throwing Events
+# Adding Listeners at Each Class Level vs. the Parent Class Only
 
-To more fully experiment with pros/cons of different ways to pass the property change events, there are two sets of parent-child-doll classes. One set has events thrown at each class level to cascade a property change event up through the objects. Another set only has each class declare its non-object properties changed, and a listener is addede to the object properties at the parent class.
+To more fully experiment with pros/cons of different ways to pass the property change events, there are two sets of parent-child-doll classes. One set has events thrown at each class level to cascade a property change event up through the objects. Another set only has each class declare its non-object properties changed, and a listener is added to the object properties at the parent class.
 
 This project demonstrates that both work. Source code shows a comparison of how the systems are implemented, with comments highlighting the pros/cons of each method.
